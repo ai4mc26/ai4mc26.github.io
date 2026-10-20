@@ -96,7 +96,7 @@ button { font: inherit; }
 .dot.cobalt { background: var(--cobalt); }
 .person-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
 .person { min-height: 72px; display: flex; gap: 10px; align-items: center; padding: 9px 10px; background: var(--white); border: 1px solid var(--line); }
-.person img, .person .initials { flex: 0 0 auto; width: 52px; height: 52px; border-radius: 50%; object-fit: cover; background: var(--paper); border: 1px solid var(--line); }
+.person img, .person .initials { flex: 0 0 52px; width: 52px; min-width: 52px; max-width: 52px; height: 52px; min-height: 52px; max-height: 52px; aspect-ratio: 1; display: block; border-radius: 50%; object-fit: cover; background: var(--paper); border: 1px solid var(--line); }
 .person .initials { display: grid; place-items: center; color: var(--muted); font-size: 12px; font-weight: 700; line-height: 1; }
 .person h3 { font-size: 14px; line-height: 1.25; }
 .person h3 a:hover, .person h3 a:focus-visible { color: var(--raspberry); text-decoration: underline; }
