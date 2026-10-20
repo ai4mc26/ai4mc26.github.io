@@ -7,12 +7,11 @@
   <title>AI4MC 2026 | Winter AI for Materials & Chemistry</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-
   <header class="site-header" data-header>
     <a class="brand" href="#top" aria-label="AI4MC 2026 home">
       <span class="brand-symbol" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
@@ -22,12 +21,8 @@
       <span></span><span></span><span class="sr-only">Toggle navigation</span>
     </button>
     <nav class="site-nav" id="site-nav" data-nav aria-label="Primary navigation">
-      <a href="#overview">Overview</a>
-      <a href="#program">Program</a>
-      <a href="#people">People</a>
-      <a href="#panel">Panel</a>
-      <a href="#venue">Venue</a>
-      <a class="nav-cta" href="#abstracts">Abstracts</a>
+      <a href="#about">About</a><a href="#program">Program</a><a href="#people">People</a>
+      <a href="#panel">Panel</a><a href="#visit">Visit</a><a class="nav-cta" href="#abstracts">Abstracts</a>
     </nav>
   </header>
 
@@ -36,169 +31,129 @@
       <canvas class="hero-canvas" data-crystal-canvas aria-hidden="true"></canvas>
       <div class="hero-grid" aria-hidden="true"></div>
       <div class="hero-inner">
-        <div class="hero-topline">
-          <span>Winter workshop</span>
-          <span>MRS Fall Meeting week</span>
-        </div>
         <div class="hero-copy">
-          <p class="hero-mark">AI <em>for</em> matter</p>
+          <p class="eyebrow light">Winter workshop / MRS Fall Meeting week</p>
           <h1 id="hero-title">Winter AI for<br>Materials <span>&amp;</span> Chemistry</h1>
-          <p class="hero-deck">A one-day workshop on models that generate, simulate, reason, and close the loop with experiment.</p>
+          <p class="hero-deck">A focused day on models that generate, simulate, reason, and close the loop with experiment.</p>
         </div>
-        <div class="hero-meta" aria-label="Event details">
-          <div><span>Date</span><strong>Thursday<br>December 3, 2026</strong></div>
-          <div><span>Time</span><strong>9:00 AM-6:00 PM<br>Eastern Time</strong></div>
-          <div><span>Venue</span><strong>Microsoft Research<br>New England</strong></div>
-          <div><span>City</span><strong>Cambridge<br>Massachusetts</strong></div>
+        <dl class="hero-meta">
+          <div><dt>Date</dt><dd>Thursday<br>December 3, 2026</dd></div>
+          <div><dt>Time</dt><dd>9:00 AM-6:00 PM<br>Eastern Time</dd></div>
+          <div><dt>Venue</dt><dd>Microsoft Research<br>New England</dd></div>
+          <div><dt>City</dt><dd>Cambridge<br>Massachusetts</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <div class="page-shell">
+      <section class="section about" id="about" aria-labelledby="about-title">
+        <div class="section-heading">
+          <div><p class="section-index">01 / About</p><h2 id="about-title">From plausible structures to physical discovery.</h2></div>
+          <p>AI4MC '26 brings together materials scientists, chemists, physicists, experimentalists, and machine-learning researchers to ask what it takes to move from capable models to reliable scientific systems.</p>
         </div>
-      </div>
-    </section>
-
-    <section class="overview section" id="overview" aria-labelledby="overview-title">
-      <div class="section-index">01 / Overview</div>
-      <div class="overview-heading">
-        <h2 id="overview-title">From plausible structures to <em>physical discovery.</em></h2>
-        <p>AI4MC '26 brings together materials scientists, chemists, physicists, experimentalists, and machine-learning researchers to ask what it takes to move from capable models to reliable scientific systems.</p>
-      </div>
-      <div class="theme-ledger" aria-label="Workshop themes">
-        <article><span>01</span><h3>Generative modeling</h3><p>New molecules, crystals, pathways, and mechanisms.</p></article>
-        <article><span>02</span><h3>Accelerated simulation</h3><p>Learning across electronic, atomistic, and continuum scales.</p></article>
-        <article><span>03</span><h3>Automated laboratories</h3><p>Closing the theory-experiment loop with active decisions.</p></article>
-        <article><span>04</span><h3>Materials discovery</h3><p>From virtual candidates to synthesizable, useful matter.</p></article>
-        <article><span>05</span><h3>Electronic structure</h3><p>Predictive representations of electrons, energy, and reactivity.</p></article>
-        <article><span>06</span><h3>Multifidelity data</h3><p>Combining sparse experiments with simulation at many scales.</p></article>
-      </div>
-    </section>
-
-    <section class="thesis-band" aria-label="Workshop thesis">
-      <p>Models are getting larger.</p>
-      <blockquote>Can discovery get <em>faster, sharper, and more physical?</em></blockquote>
-    </section>
-
-    <section class="program section" id="program" aria-labelledby="program-title">
-      <div class="section-index">02 / Program</div>
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow">Tentative schedule</p>
-          <h2 id="program-title">One focused day.<br>Nine hours together.</h2>
+        <div class="theme-grid" aria-label="Workshop themes">
+          <article><span>01</span><div><h3>Generative modeling</h3><p>Molecules, crystals, pathways, and mechanisms.</p></div></article>
+          <article><span>02</span><div><h3>Accelerated simulation</h3><p>Learning across physical scales.</p></div></article>
+          <article><span>03</span><div><h3>Automated laboratories</h3><p>Closing the theory-experiment loop.</p></div></article>
+          <article><span>04</span><div><h3>Materials discovery</h3><p>From virtual candidates to useful matter.</p></div></article>
+          <article><span>05</span><div><h3>Electronic structure</h3><p>Electrons, energy, and reactivity.</p></div></article>
+          <article><span>06</span><div><h3>Multifidelity data</h3><p>Experiments and simulation at many scales.</p></div></article>
         </div>
-        <p>Seven invited talks, six contributed spotlights, a dedicated poster session, and one candid panel. All times are Eastern and subject to refinement.</p>
-      </div>
-      <ol class="schedule">
-        <li class="opening"><time>9:00-9:15</time><div><span>Opening</span><strong>Welcome and framing remarks</strong></div><b>15 min</b></li>
-        <li class="invited"><time>9:15-10:45</time><div><span>Invited talks I</span><strong>Three invited perspectives</strong></div><b>3 x 30 min</b></li>
-        <li class="contributed"><time>10:45-11:15</time><div><span>Contributed talks I</span><strong>Three selected spotlights</strong></div><b>3 x 10 min</b></li>
-        <li class="invited"><time>11:15-12:15</time><div><span>Invited talks II</span><strong>Two invited perspectives</strong></div><b>2 x 30 min</b></li>
-        <li class="lunch"><time>12:15-1:45</time><div><span>Lunch break</span><strong>Conversation, food, and reset</strong></div><b>90 min</b></li>
-        <li class="poster"><time>1:45-3:15</time><div><span>Poster session</span><strong>Contributed work and informal exchange</strong></div><b>90 min</b></li>
-        <li class="invited"><time>3:15-4:15</time><div><span>Invited talks III</span><strong>Two invited perspectives</strong></div><b>2 x 30 min</b></li>
-        <li class="contributed"><time>4:15-4:45</time><div><span>Contributed talks II</span><strong>Three selected spotlights</strong></div><b>3 x 10 min</b></li>
-        <li class="panel"><time>4:45-5:45</time><div><span>Panel</span><strong>How far are we from an AlphaFold moment for materials?</strong></div><b>60 min</b></li>
-        <li class="closing"><time>5:45-6:00</time><div><span>Closing</span><strong>Open questions and next steps</strong></div><b>15 min</b></li>
-      </ol>
-    </section>
+      </section>
 
-    <section class="people section" id="people" aria-labelledby="people-title">
-      <div class="section-index">03 / People</div>
-      <div class="people-heading">
-        <div>
-          <p class="eyebrow raspberry">Confirmed and tentative</p>
-          <h2 id="people-title">Invited speakers</h2>
+      <section class="section program" id="program" aria-labelledby="program-title">
+        <div class="section-heading compact-heading">
+          <div><p class="section-index">02 / Program</p><h2 id="program-title">One focused day</h2></div>
+          <p>Seven invited talks, six contributed spotlights, one poster session, and one candid panel. All times are Eastern and tentative.</p>
         </div>
-        <p>Seven half-hour talks spanning generative modeling, simulation, electronic structure, quantum matter, and experiment-aware discovery.</p>
-      </div>
-      <div class="person-grid invited-grid">
-        <article><span class="person-no">01</span><h3>Ju Li</h3><p class="affiliation">MIT</p><p>Atomistic modeling, energy materials, and multiscale materials behavior.</p></article>
-        <article><span class="person-no">02</span><h3>Boris Kozinsky</h3><p class="affiliation">Harvard University</p><p>Machine-learned potentials, atomistic simulation, and materials design.</p></article>
-        <article><span class="person-no">03</span><h3>Yuanqi Du</h3><p class="affiliation">AI for science researcher</p><p>Generative modeling, molecular pathways, and autonomous discovery agents.</p></article>
-        <article><span class="person-no">04</span><h3>Bingqing Cheng</h3><p class="affiliation">UC Berkeley</p><p>Machine-learning potentials, enhanced sampling, and free-energy prediction.</p></article>
-        <article><span class="person-no">05</span><h3>Lixue (Sherry) Cheng</h3><p class="affiliation">HKUST</p><p>Electronic structure, quantum chemistry, and structured representations.</p></article>
-        <article><span class="person-no">06</span><h3>Eun-Ah Kim</h3><p class="affiliation">Cornell University</p><p>Quantum materials, many-body physics, and neural representations.</p></article>
-        <article class="tba"><span class="person-no">07</span><h3>To be announced</h3><p class="affiliation">Invited speaker</p><p>One additional perspective will complete the invited program.</p></article>
-      </div>
-
-      <div class="panelist-heading">
-        <div><p class="eyebrow cobalt">Discussion leaders</p><h2>Panelists</h2></div>
-        <p>Perspectives from theory, computation, experiment, and research systems.</p>
-      </div>
-      <div class="person-grid panelist-grid">
-        <article><span class="person-no">P1</span><h3>Mingda Li</h3><p class="affiliation">MIT</p><p>Quantum materials, AI-enabled characterization, and physical inference.</p></article>
-        <article><span class="person-no">P2</span><h3>Heather J. Kulik</h3><p class="affiliation">MIT</p><p>Electronic structure, catalysis, and data-driven molecular design.</p></article>
-        <article><span class="person-no">P3</span><h3>Rafael Gomez-Bombarelli</h3><p class="affiliation">MIT &amp; Lila Sciences</p><p>Generative design, atomistic learning, and practical materials discovery.</p></article>
-        <article><span class="person-no">P4</span><h3>Carla P. Gomes</h3><p class="affiliation">Cornell University</p><p>AI for science, constraint reasoning, and autonomous materials research.</p></article>
-        <article><span class="person-no">P5</span><h3>Tian Xie</h3><p class="affiliation">Project Prometheus</p><p>Foundation models, learned simulation, and experimentally grounded design.</p></article>
-      </div>
-    </section>
-
-    <section class="panel-focus section" id="panel" aria-labelledby="panel-title">
-      <div class="section-index light">04 / Panel</div>
-      <div class="panel-question">
-        <p class="eyebrow">One deliberately difficult question</p>
-        <h2 id="panel-title">How far are we from an <em>AlphaFold moment</em> for materials?</h2>
-      </div>
-      <ol class="panel-prompts">
-        <li><span>01</span><p><strong>Theory vs. experiment:</strong> when they disagree, what should an AI system trust?</p></li>
-        <li><span>02</span><p><strong>Data scarcity:</strong> can foundation models work when decisive measurements remain rare?</p></li>
-        <li><span>03</span><p><strong>LLMs:</strong> where do they genuinely help discovery, and where do they merely narrate?</p></li>
-        <li><span>04</span><p><strong>Physics priors:</strong> indispensable inductive bias, or a ceiling on what models can discover?</p></li>
-      </ol>
-    </section>
-
-    <section class="abstracts section" id="abstracts" aria-labelledby="abstracts-title">
-      <div class="section-index">05 / Call for abstracts</div>
-      <div class="abstracts-layout">
-        <div>
-          <p class="status-chip">Details coming soon</p>
-          <h2 id="abstracts-title">Bring work worth discussing.</h2>
+        <div class="program-layout">
+          <ol class="schedule" aria-label="Tentative workshop schedule">
+            <li><time>9:00-9:15</time><div><strong>Welcome and framing remarks</strong><span>Opening</span></div><b>15 min</b></li>
+            <li class="invited"><time>9:15-10:45</time><div><strong>Three invited perspectives</strong><span>Invited talks I</span></div><b>3 x 30</b></li>
+            <li class="contributed"><time>10:45-11:15</time><div><strong>Three selected spotlights</strong><span>Contributed talks I</span></div><b>3 x 10</b></li>
+            <li class="invited"><time>11:15-12:15</time><div><strong>Two invited perspectives</strong><span>Invited talks II</span></div><b>2 x 30</b></li>
+            <li class="break"><time>12:15-1:45</time><div><strong>Lunch break</strong><span>Conversation and reset</span></div><b>90 min</b></li>
+            <li class="poster"><time>1:45-3:15</time><div><strong>Poster session</strong><span>Contributed work and exchange</span></div><b>90 min</b></li>
+            <li class="invited"><time>3:15-4:15</time><div><strong>Two invited perspectives</strong><span>Invited talks III</span></div><b>2 x 30</b></li>
+            <li class="contributed"><time>4:15-4:45</time><div><strong>Three selected spotlights</strong><span>Contributed talks II</span></div><b>3 x 10</b></li>
+            <li class="panel-row"><time>4:45-5:45</time><div><strong>AlphaFold moment for materials?</strong><span>Panel</span></div><b>60 min</b></li>
+            <li><time>5:45-6:00</time><div><strong>Open questions and next steps</strong><span>Closing</span></div><b>15 min</b></li>
+          </ol>
+          <aside class="panel-card" id="panel" aria-labelledby="panel-title">
+            <p class="eyebrow light">Panel / 4:45-5:45 PM</p>
+            <h3 id="panel-title">How far are we from an <em>AlphaFold moment</em> for materials?</h3>
+            <ol>
+              <li><span>01</span><p><strong>Theory vs. experiment:</strong> when they disagree, what should AI trust?</p></li>
+              <li><span>02</span><p><strong>Data scarcity:</strong> can foundation models work when measurements remain rare?</p></li>
+              <li><span>03</span><p><strong>LLMs:</strong> where do they aid discovery, and where do they merely narrate?</p></li>
+              <li><span>04</span><p><strong>Physics priors:</strong> essential inductive bias, or a ceiling on discovery?</p></li>
+            </ol>
+          </aside>
         </div>
-        <div class="abstracts-copy">
-          <p>Abstract submissions will support the six contributed talks and the 90-minute poster session. We welcome early results, negative results, datasets, benchmarks, and work in progress across AI, materials, and chemistry.</p>
-          <p>Submission format, dates, and the submission link will be posted here.</p>
-        </div>
-      </div>
-      <div class="abstract-stats" aria-label="Planned contributed program">
-        <div><strong>06</strong><span>Contributed<br>talks</span></div>
-        <div><strong>10</strong><span>Minutes<br>each</span></div>
-        <div><strong>90</strong><span>Minutes of<br>posters</span></div>
-      </div>
-    </section>
+      </section>
 
-    <section class="venue section" id="venue" aria-labelledby="venue-title">
-      <div class="section-index light">06 / Venue</div>
-      <div class="venue-layout">
-        <div>
-          <p class="eyebrow">Cambridge, Massachusetts</p>
-          <h2 id="venue-title">Microsoft Research<br>New England</h2>
+      <section class="section people" id="people" aria-labelledby="people-title">
+        <div class="section-heading compact-heading">
+          <div><p class="section-index">03 / People</p><h2 id="people-title">Speakers &amp; panelists</h2></div>
+          <p>Perspectives spanning generative modeling, simulation, electronic structure, experiment, and research systems.</p>
         </div>
-        <div class="venue-note">
-          <p>Thursday, December 3, 2026</p>
-          <p>Held during MRS Fall Meeting week, with the full program running from 9:00 AM to 6:00 PM Eastern Time.</p>
-          <span>Access and arrival details will be posted closer to the workshop.</span>
+        <div class="people-group">
+          <div class="group-label"><span class="dot raspberry"></span>Invited speakers</div>
+          <div class="person-grid">
+            <article><h3>Ju Li</h3><p class="affiliation">MIT</p><p>Atomistic modeling, energy materials, multiscale behavior.</p></article>
+            <article><h3>Boris Kozinsky</h3><p class="affiliation">Harvard University</p><p>Learned potentials, atomistic simulation, materials design.</p></article>
+            <article><h3>Yuanqi Du</h3><p class="affiliation">AI for science researcher</p><p>Generative models, molecular pathways, discovery agents.</p></article>
+            <article><h3>Bingqing Cheng</h3><p class="affiliation">UC Berkeley</p><p>ML potentials, enhanced sampling, free-energy prediction.</p></article>
+            <article><h3>Lixue (Sherry) Cheng</h3><p class="affiliation">HKUST</p><p>Electronic structure, quantum chemistry, representations.</p></article>
+            <article><h3>Eun-Ah Kim</h3><p class="affiliation">Cornell University</p><p>Quantum materials, many-body physics, neural representations.</p></article>
+            <article class="tba"><h3>To be announced</h3><p class="affiliation">Invited speaker</p><p>One additional perspective will complete the program.</p></article>
+          </div>
         </div>
-      </div>
-      <div class="venue-coordinates" aria-hidden="true"><span>42.3601 N</span><b></b><span>71.0589 W</span></div>
-    </section>
+        <div class="people-group panelists">
+          <div class="group-label"><span class="dot cobalt"></span>Panelists</div>
+          <div class="person-grid panelist-grid">
+            <article><h3>Mingda Li</h3><p class="affiliation">MIT</p><p>Quantum materials, AI characterization, physical inference.</p></article>
+            <article><h3>Heather J. Kulik</h3><p class="affiliation">MIT</p><p>Electronic structure, catalysis, molecular design.</p></article>
+            <article><h3>Rafael Gomez-Bombarelli</h3><p class="affiliation">MIT &amp; Lila Sciences</p><p>Generative design, atomistic learning, discovery.</p></article>
+            <article><h3>Carla P. Gomes</h3><p class="affiliation">Cornell University</p><p>AI for science, constraint reasoning, autonomy.</p></article>
+            <article><h3>Tian Xie</h3><p class="affiliation">Project Prometheus</p><p>Foundation models, learned simulation, grounded design.</p></article>
+          </div>
+        </div>
+      </section>
 
-    <section class="organizers section" id="organizers" aria-labelledby="organizers-title">
-      <div class="section-index">07 / Organizers</div>
-      <div class="organizers-heading">
-        <h2 id="organizers-title">Organizing team</h2>
-        <p>Building a focused meeting across materials, chemistry, physics, and machine learning.</p>
-      </div>
-      <div class="organizer-list">
-        <article><span>01</span><h3>Mouyang Cheng</h3><p>MIT</p></article>
-        <article><span>02</span><h3>Juno Nam</h3><p>MIT</p></article>
-        <article class="organizer-more"><span>+</span><h3>Additional organizers</h3><p>To be announced</p></article>
-      </div>
-    </section>
+      <section class="section practical" aria-label="Participation and venue information">
+        <div class="practical-grid">
+          <article class="abstract-card" id="abstracts">
+            <p class="section-index">04 / Call for abstracts</p><p class="status-chip">Details coming soon</p>
+            <h2>Bring work worth discussing.</h2>
+            <p>Abstracts will support six 10-minute contributed talks and a 90-minute poster session. Early results, negative results, datasets, benchmarks, and work in progress are welcome.</p>
+            <div class="mini-stats"><span><strong>06</strong>talks</span><span><strong>10</strong>min each</span><span><strong>90</strong>min posters</span></div>
+          </article>
+          <article class="venue-card" id="visit">
+            <p class="section-index light">05 / Visit</p><h2>Microsoft Research<br>New England</h2><p>Cambridge, Massachusetts</p>
+            <dl>
+              <div><dt>Date</dt><dd>Thursday, December 3, 2026</dd></div>
+              <div><dt>Context</dt><dd>MRS Fall Meeting week</dd></div>
+              <div><dt>Access</dt><dd>Arrival details coming soon</dd></div>
+            </dl>
+          </article>
+        </div>
+        <div class="organizers" id="organizers">
+          <div><p class="section-index">06 / Organizers</p><h2>Organizing team</h2></div>
+          <div class="organizer-list">
+            <article><h3>Mouyang Cheng</h3><p>MIT</p></article>
+            <article><h3>Juno Nam</h3><p>MIT</p></article>
+            <article><h3>Additional organizers</h3><p>To be announced</p></article>
+          </div>
+        </div>
+      </section>
+    </div>
   </main>
 
   <footer class="site-footer">
     <a class="brand footer-brand" href="#top"><span class="brand-symbol" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span>AI4MC<span>/26</span></span></a>
-    <p>Winter AI for Materials &amp; Chemistry Workshop</p>
-    <p>Cambridge, MA &middot; December 3, 2026</p>
+    <p>Winter AI for Materials &amp; Chemistry Workshop</p><p>Cambridge, MA &middot; December 3, 2026</p>
   </footer>
-
   <script src="script.js"></script>
 </body>
 </html>
