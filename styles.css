@@ -113,6 +113,8 @@ button { font: inherit; }
 .venue-card { color: var(--white); background: var(--evergreen); }
 .status-chip { display: inline-block; margin: 22px 0 10px; padding: 5px 8px; font: 10px var(--mono); text-transform: uppercase; background: var(--white); }
 .abstract-card > p:not(.section-index):not(.status-chip) { max-width: 620px; margin-top: 14px; }
+.form-cta { display: inline-flex; align-items: center; min-height: 42px; margin-top: 22px; padding: 10px 15px; color: var(--white); background: var(--ink); border: 1px solid var(--ink); font-size: 12px; font-weight: 700; }
+.form-cta:hover, .form-cta:focus-visible { color: var(--ink); background: var(--white); }
 .mini-stats { display: flex; gap: 8px; margin-top: 28px; }
 .mini-stats span { min-width: 100px; display: flex; align-items: baseline; gap: 5px; padding: 10px; border: 1px solid rgba(23,27,26,.35); font: 10px var(--mono); text-transform: uppercase; }
 .mini-stats strong { font: 22px var(--sans); }
