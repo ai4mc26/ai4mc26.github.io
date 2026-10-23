@@ -125,7 +125,7 @@ button { font: inherit; }
 .venue-card dd { font-size: 12px; }
 .organizers { display: grid; grid-template-columns: .7fr 1.3fr; gap: 34px; padding-top: 28px; }
 .organizers h2 { font-size: 25px; }
-.organizer-list { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--ink); }
+.organizer-list { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--ink); }
 .organizer-list article { padding: 13px 14px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .organizer-list h3 { font-size: 13px; }
 .organizer-list p { margin-top: 3px; color: var(--muted); font: 10px var(--mono); }
@@ -141,6 +141,7 @@ button { font: inherit; }
   .panel-card ol { grid-column: 2; grid-row: 1 / span 2; }
   .person-grid { grid-template-columns: repeat(3, 1fr); }
   .panelist-grid { grid-template-columns: repeat(3, 1fr); }
+  .organizer-list { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 720px) {
