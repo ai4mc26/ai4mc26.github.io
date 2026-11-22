@@ -157,6 +157,8 @@ button { font: inherit; }
 .detail-timeline .break .timeline-kind, .detail-timeline .poster .timeline-kind { color: #97611b; }
 .detail-timeline .panel .timeline-kind { color: var(--evergreen); }
 .detail-timeline h3 { margin-top: 4px; font-size: 18px; line-height: 1.25; }
+.detail-timeline .speaker-affiliation { color: var(--raspberry); font-size: .68em; font-weight: 600; white-space: nowrap; }
+.contributed-list .speaker-affiliation { color: var(--cobalt); }
 .detail-timeline p { margin-top: 5px; color: var(--muted); font-size: 13px; }
 .detail-timeline p a { color: var(--evergreen); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
 .contributed-list li { padding-top: 12px; padding-bottom: 12px; }
