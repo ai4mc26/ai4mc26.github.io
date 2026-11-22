@@ -76,7 +76,7 @@ button { font: inherit; }
 .schedule-detail-link strong { font-size: 17px; line-height: 1.2; }
 .schedule-detail-arrow { flex: 0 0 auto; display: grid; place-items: center; width: 36px; height: 36px; border: 1px solid rgba(255,255,255,.5); border-radius: 50%; font-size: 24px; line-height: 1; }
 .schedule-detail-link:hover, .schedule-detail-link:focus-visible { background: #245848; }
-.schedule-detail-link:focus-visible, .detail-hero a:focus-visible, .detail-timeline a:focus-visible, .talk-grid a:focus-visible, .lunch-layout a:focus-visible { outline: 3px solid var(--amber); outline-offset: 3px; }
+.schedule-detail-link:focus-visible, .detail-hero a:focus-visible, .detail-timeline a:focus-visible, .lunch-layout a:focus-visible { outline: 3px solid var(--amber); outline-offset: 3px; }
 .schedule { list-style: none; padding: 0; border-top: 2px solid var(--ink); }
 .schedule li { position: relative; min-height: 54px; display: grid; grid-template-columns: 105px 1fr; gap: 14px; align-items: center; padding: 8px 15px; border-bottom: 1px solid var(--line); background: var(--white); }
 .schedule li::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 4px; background: var(--muted); }
@@ -151,20 +151,17 @@ button { font: inherit; }
 .detail-timeline li.contributed { border-left-color: var(--cobalt); }
 .detail-timeline li.break, .detail-timeline li.poster { border-left-color: var(--amber); }
 .detail-timeline li.panel { border-left-color: var(--evergreen); }
-.detail-timeline time { padding-top: 3px; font: 11px/1.5 var(--mono); white-space: nowrap; }
-.timeline-kind, .talk-meta { display: block; color: var(--raspberry); font: 10px var(--mono); text-transform: uppercase; }
+.detail-timeline time, .detail-timeline .talk-time { padding-top: 3px; font: 11px/1.5 var(--mono); white-space: nowrap; }
+.timeline-kind { display: block; color: var(--raspberry); font: 10px var(--mono); text-transform: uppercase; }
 .detail-timeline .contributed .timeline-kind { color: var(--cobalt); }
 .detail-timeline .break .timeline-kind, .detail-timeline .poster .timeline-kind { color: #97611b; }
 .detail-timeline .panel .timeline-kind { color: var(--evergreen); }
 .detail-timeline h3 { margin-top: 4px; font-size: 18px; line-height: 1.25; }
 .detail-timeline p { margin-top: 5px; color: var(--muted); font-size: 13px; }
 .detail-timeline p a { color: var(--evergreen); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
-.talk-grid { list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; padding: 0; }
-.talk-grid li { min-height: 200px; display: flex; flex-direction: column; padding: 20px; border: 1px solid var(--line); border-top: 4px solid var(--cobalt); background: var(--white); }
-.talk-meta { color: var(--cobalt); }
-.talk-grid h3 { margin: 24px 0 20px; font-size: 17px; line-height: 1.35; overflow-wrap: anywhere; }
-.talk-grid h3 a:hover { color: var(--cobalt); text-decoration: underline; text-underline-offset: 3px; }
-.talk-grid p { margin-top: auto; padding-top: 12px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; font-weight: 700; }
+.contributed-list li { padding-top: 12px; padding-bottom: 12px; }
+.contributed-list h3 { margin-top: 0; font-size: 16px; }
+.contributed-list p { margin-top: 2px; }
 .lunch-layout { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(300px, .75fr); gap: 20px; align-items: start; }
 .lunch-map-wrap { border: 1px solid var(--line); background: var(--white); }
 .lunch-sketch { display: block; width: 100%; height: auto; }
@@ -232,8 +229,7 @@ button { font: inherit; }
   .detail-hero .hero-inner { padding: 32px 0 23px; }
   .detail-hero-meta a { margin-left: 0; }
   .detail-timeline li { grid-template-columns: 125px 1fr; gap: 12px; padding: 14px; }
-  .detail-timeline time { white-space: normal; }
-  .talk-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .detail-timeline time, .detail-timeline .talk-time { white-space: normal; }
 }
 
 @media (max-width: 430px) {
@@ -245,8 +241,6 @@ button { font: inherit; }
   .mini-stats span { min-width: calc(50% - 4px); }
   .detail-timeline li { grid-template-columns: 1fr; gap: 4px; }
   .detail-timeline h3 { font-size: 16px; }
-  .talk-grid { grid-template-columns: 1fr; }
-  .talk-grid li { min-height: 0; }
 }
 
 @media (prefers-reduced-motion: reduce) {
